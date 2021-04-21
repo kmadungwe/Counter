@@ -61,6 +61,8 @@ class Counter extends Component {
         className='content-wrapper'
         style={{ backgroundColor: 'powderblue' }}
       >
+        {' '}
+        <div className='number'>{this.state.count}</div>
         <div
           style={{
             display: 'grid',
@@ -100,7 +102,7 @@ class Counter extends Component {
             />
           </button>
         </div>
-        <h1>Here is my count! {this.state.count}</h1>
+        <h1>Here is my class count!</h1>
       </div>
     );
   }
@@ -123,6 +125,7 @@ const FunctCounter = () => {
 
   return (
     <div className='content-wrapperR'>
+      <div className='number'>{count}</div>
       <div
         style={{
           display: 'grid',
@@ -151,7 +154,7 @@ const FunctCounter = () => {
         </button>
       </div>
 
-      <h1>Here is my functional count! {count}</h1>
+      <h1>Here is my functional count! </h1>
     </div>
   );
 };
